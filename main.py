@@ -40,6 +40,10 @@ def save_file(filename, data):
 #async def get_all():
     #return files
 
+@app.get("/teste")
+async def teste():
+    return {"HELLO" : "WORLD"}
+
 @app.get("/file")
 async def get_file(file_path: str):
     try:
